@@ -1,6 +1,14 @@
+"""
+This module implements the Merge Sort algorithm.
+"""
 
 def merge_sort(arr):
-   
+    """
+    Sorts an array in ascending order using the Merge Sort algorithm.
+
+    Args:
+        arr (list): List of integers to be sorted.
+    """
     if len(arr) > 1:
         mid = len(arr) // 2
         left_half = arr[:mid]
@@ -31,7 +39,9 @@ def merge_sort(arr):
             k += 1
 
 def main():
-    
+    """
+    Demonstrates the Merge Sort algorithm with a sample list.
+    """
     arr = [38, 27, 43, 3, 9, 82, 10]
     print("Unsorted array:", arr)
     merge_sort(arr)
